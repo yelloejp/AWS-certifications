@@ -1,0 +1,45 @@
+# 1. Application Load Balancer
+- There are two types of load balancers: application and traditional load balancers.
+- Application load balancer is enable operation of separate containers in an instance routing different destinations.  
+- Listner, Target and Target group should be set up. 
+    - Listner : rule where to direct 
+    - Target : destination based on rules 
+    - Target group : target instance 
+    
+# 2. Auto Scaling 
+- To maintain appropriate numbers of EC2 instances. 
+- Auto Scaling is closely communicating with Load Balancer and CloudWatch. Load Balancer sends helth check information to CloudWatch. CloudWatch sends alerts to Auto scaling. The, Auto Scaling reconfigures numbers of instances. 
+- How to manage instances? 
+    - Define target instance
+    - Set region, minimum and maximum numbers of instances 
+    - Set rule when to initiate and terminate instances by Auto Scaling 
+    
+# 3. Route 53 
+- As DNS service, private and public domain names can be set. 
+- When a user want to access a website, Internet providers send and receives IP addresses from AWS 53 according to the domain names. 
+
+# 4. RDS(Relational Database Service) 
+- By automatic supports on updates and patches, owners need to focus only on contents and policies/ 
+- Support MySQL, PostgreSQL, Oracle, MariaDB 
+- Auto replication for backup is available in another region. 
+
+# 5. Lambda 
+- To run programming code without server provisioning
+- Auto deployment is available via CodePipeline and CodeDeloy 
+- Use case : Let's say that a code in Lambda detects objects in a picture. When a user uploads a picture to S3, Lambda runs the code by trigger scheduler.  
+
+# 6. Elastic Beanstalk. 
+- To support how to move non-cloud applications to cloud environment. 
+- It suggests capacity, load balancing, etc. 
+
+# 7. SNS(Simple Notification Service) 
+- Mobile communication services for instances and users.
+- To deliver messages to instances as triggers and users as alers. 
+
+# 8. CloudWatch
+- Monitoring service. 
+- AWS provides default monitoring service for EC2, EBS and RDS. Users can build up customized monitoring functions. 
+
+# 9. CloudFormation
+- An instance is described in a template form such as .json 
+- In a template form, users can specify resources and view Meta data
