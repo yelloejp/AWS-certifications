@@ -1,0 +1,38 @@
+# 1. Fundamentals 
+- Basic concept : You pay as you go. Paying for services. 
+- 3 differnet payment options
+    - Upfront : full payment at the start term(biggest discount) 
+    - Partial upfront
+    - No upfront
+- 3 impacts on cost : computation, storage and data transfer 
+    - in case of inbound transfer and transfer within the same region, no cost 
+
+# 2. Pricing details
+1) EC2 
+- Depending on 4 components:
+    - capacity used
+    - clock-hour server time
+    - instance types and price options
+        - on-demand instance: computed by hour
+        - reserved instance: cost is low (selected upfront payment)
+        - spot instance: bid for unused EC2
+    - OS is included in prices but SWs require licences
+2) S3 
+- Depending on 3 components:
+    - storage class including access frequency
+    - number of objects stored 
+    - storage type
+3) RDS 
+- Depending on 2 components:
+    - clock-hour server time
+    - backup
+        - generally, backup is free
+        - in case terminated RDS, cost per GB per month 
+        
+# 3. Support plan
+- AWS provides Proactive Guidance(TAM: Tech. Account Manager), Trusted Advisor and Account Assistance support
+- 4 support plans: Basic, Developer, Business, Enterprise
+
+# 4. Trusted Advisor
+- to keep tracking all contents operating. 
+- Provides advices in 4 categories: cost optimization, performance, security, fault tolerance 
